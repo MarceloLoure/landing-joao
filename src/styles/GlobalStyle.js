@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: "Tomorrow", Sans-serif;
+    font-family: "Tomorrow", sans-serif;
     background: #232221;
     color: #FFFFFF;
     -webkit-font-smoothing: antialiased;

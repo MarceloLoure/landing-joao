@@ -22,7 +22,7 @@ export const Badge = styled.div`
   font-weight: bold;
   border-radius: 4px;
   margin-bottom: 20px;
-`;result
+`;
 
 export const Title = styled.h2`
   font-size: 2.5rem;
