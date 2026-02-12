@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import FutureTenseRegular from "../assets/fonts/FutureTense-Regular.ttf";
+import FutureTenseRegular from "../assets/fonts/FutureTense-Regular.woff2";
 
 export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "Future Tense";
-    src: url(${FutureTenseRegular}) format("truetype");
+    src: url(${FutureTenseRegular}) format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -22,10 +22,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: "Future Tense", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: #232221;
     color: #FFFFFF;
     -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2 {
+    font-family: "Future Tense", sans-serif;
+    letter-spacing: 1px;
   }
 
   button {
