@@ -24,7 +24,13 @@ export default function FinalCTA() {
         </S.Subtitle>
 
         <S.Button onClick={goToCheckout} id="checkout">
-          QUERO TRANSFORMAR MEU CORPO AGORA
+          <a
+            href="https://payfast.greenn.com.br/redirect/251032"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            QUERO TRANSFORMAR MEU CORPO AGORA
+          </a>
         </S.Button>
       </S.Content>
     </S.Container>

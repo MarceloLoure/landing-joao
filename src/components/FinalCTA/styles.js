@@ -36,7 +36,7 @@ export const Subtitle = styled.p`
   font-size: 1.1rem;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   background: white;
   color: ${({ theme }) => theme.colors.primary};
   border: none;
@@ -48,5 +48,10 @@ export const Button = styled.button`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration: none;
   }
 `;
