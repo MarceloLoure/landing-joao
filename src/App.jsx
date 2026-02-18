@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 import Home from "./pages/home";
 import PoliticaPrivacidade from "./pages/politica-de-privacidade";
 import TermosDeUso from "./pages/termos-de-uso";
@@ -11,6 +12,7 @@ function App() {
       <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
       <Route path="/termos-de-uso" element={<TermosDeUso />} />
       <Route path="/politica-de-reembolso" element={<PoliticaDeReembolso />} />
+      <Analytics />
     </Routes>
   );
 }
