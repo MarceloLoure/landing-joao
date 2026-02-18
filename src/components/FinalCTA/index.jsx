@@ -25,7 +25,7 @@ export default function FinalCTA() {
 
         <S.Button onClick={goToCheckout} id="checkout">
           <a
-            href="https://payfast.greenn.com.br/redirect/251032"
+            href="https://payfast.greenn.com.br/redirect/264654"
             target="_blank"
             rel="noopener noreferrer"
           >
