@@ -1,42 +1,19 @@
-import Hero from "./components/Hero";
-import Problem from "./components/Problem";
-import Method from "./components/Method";
-// import Benefits from "./components/Benefits";
-import Results from "./components/Results";
-import Authority from "./components/Authority";
-import Offer from "./components/Offer";
-// import Guarantee from "./components/Guarantee";
-import FAQ from "./components/FAQ";
-// import Footer from "./components/Footer";
-
-import FinalCTA from "./components/FinalCTA";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import PoliticaPrivacidade from "./pages/politica-de-privacidade";
+import TermosDeUso from "./pages/termos-de-uso";
+import PoliticaDeReembolso from "./pages/politica-de-reembolso";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <Problem />
-      <Method />
-
-      <Results />
-
-      <Authority />
-
-      <Offer />
-
-       <FAQ />
-       
-       <FinalCTA />
-      {/* 
-        <Benefits />
-       
-       
-        <Guarantee />
-       
-        <Footer />
-      */}
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
+      <Route path="/termos-de-uso" element={<TermosDeUso />} />
+      <Route path="/politica-de-reembolso" element={<PoliticaDeReembolso />} />
+    </Routes>
   );
 }
 
 export default App;
+

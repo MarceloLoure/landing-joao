@@ -1,41 +1,56 @@
-
 import * as S from "./styles";
 import { motion } from "framer-motion";
-import CTA from "../CTA";
+import { useCheckout } from "../../hooks/useCheckout";
 
-export default function Offer() {
-
+export default function FinalOffer() {
+  const goToCheckout = useCheckout();
 
   return (
-    <S.Container id="offer">
+    <S.Container>
       <S.Content
         as={motion.div}
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <S.Badge>OFERTA ESPECIAL</S.Badge>
-
         <S.Title>
-          Comece agora sua transformação com acompanhamento
-          <span> 100% personalizado</span>
+          São Apenas <span>30 Dias</span> Para Mudar Seu Corpo
         </S.Title>
 
+        <S.Text>
+          Você já perdeu 30 dias antes.
+          <br />
+          Agora pode usar 30 dias para transformar seu corpo e sua mentalidade.
+        </S.Text>
+
         <S.List>
-          <li>✔ Treino individualizado</li>
-          <li>✔ Estratégia nutricional direcionada</li>
-          <li>✔ Ajustes semanais</li>
-          <li>✔ Suporte direto comigo</li>
+          <li>✔ Perder até 5kg</li>
+          <li>✔ Construir constância</li>
+          <li>✔ Recuperar sua confiança</li>
+          <li>✔ Assumir controle da sua rotina</li>
         </S.List>
 
-        <S.Guarantee>
-          🔒 Garantia de 7 dias — se não gostar, devolvemos seu investimento.
-        </S.Guarantee>
+        <S.Highlight>
+          O problema nunca foi falta de informação.
+          <br />
+          Foi falta de constância.
+        </S.Highlight>
 
-        <CTA>
-          QUERO TRANSFORMAR MEU CORPO AGORA
-        </CTA>
+        <S.Button onClick={goToCheckout}>
+           <a
+            href="https://payfast.greenn.com.br/redirect/251032"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+             GARANTIR MINHA VAGA AGORA
+          </a>
+         
+        </S.Button>
+
+        <S.Micro>
+          Pagamento seguro • Acesso imediato • 30 dias de transformação
+        </S.Micro>
       </S.Content>
     </S.Container>
   );

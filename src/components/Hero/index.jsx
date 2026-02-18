@@ -1,30 +1,33 @@
-import { useScrollTo } from "../../hooks/useScrollsTo";
-import CTA from "../CTA";
 import * as S from "./styles";
+import { useCheckout } from "../../hooks/useCheckout";
 
 export default function Hero() {
-    const scrollToCheckout = useScrollTo("checkout");
+  const goToCheckout = useCheckout();
 
   return (
     <S.Container>
-      <S.Overlay />
-
       <S.Content>
-        <S.Badge>CONSULTORIA ONLINE PERSONALIZADA</S.Badge>
+        <S.Title>DESSA VEZ VAI</S.Title>
 
-        <S.Title>
-          Construa um físico forte e definido com um método focado em
-          <span> hipertrofia real</span>
-        </S.Title>
+        <S.Subtitle>
+          Perca até 5kg em 30 dias
+          <br />
+          e construa constância no treino de uma vez por todas
+        </S.Subtitle>
 
         <S.Description>
-          Treino estratégico, plano alimentar estruturado e acompanhamento
-          direto para você sair da estagnação e evoluir de verdade.
+          Mesmo que você já tenha começado várias vezes e desistido.
         </S.Description>
 
-        <CTA onClick={scrollToCheckout}>
-          QUERO TRANSFORMAR MEU CORPO
-        </CTA>
+        <S.Button onClick={goToCheckout}>
+          QUERO COMEÇAR AGORA
+        </S.Button>
+
+        <S.Badges>
+          <span>✔ Treino estruturado</span>
+          <span>✔ Nutrição com especialista</span>
+          <span>✔ Método de constância</span>
+        </S.Badges>
       </S.Content>
     </S.Container>
   );

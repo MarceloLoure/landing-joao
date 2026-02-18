@@ -84,3 +84,24 @@ export const Button = styled.button`
     box-shadow: 0 0 25px rgba(242, 98, 15, 0.6);
   }
 `;
+
+export const Subtitle = styled.h2`
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.4;
+
+  span {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+export const Badges = styled.div`
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+`;
