@@ -9,6 +9,7 @@ export const Container = styled.section`
     ${({ theme }) => theme.colors.primary},
     ${({ theme }) => theme.colors.accent}
   );
+  width: auto;
 `;
 
 export const Content = styled.div`

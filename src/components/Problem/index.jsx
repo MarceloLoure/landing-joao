@@ -15,14 +15,11 @@ export default function Problem() {
 
         <S.List>
           {[
-            "Já começaram academia várias vezes e desistiram",
-            "Sabem o que precisam fazer, mas não conseguem manter constância",
-            "Estão acima do peso e incomodados com o próprio corpo",
-            "Se comparam com outras pessoas",
-            "Têm vergonha de tirar a camiseta na praia",
-            "Evita fotos porque não gosta do que vê",
-            "Desconta ansiedade na comida",
-            "Vive dizendo “segunda eu começo”"
+            "⁠Se incomodam com a própria barriga.",
+            "em vergonha das celulites.",
+            "⁠Se comparam com outras pessoas.",
+            "⁠Vivem sem disposição e no “segunda eu começo.",
+            "⁠Sabem o que precisa fazer mas não conseguem manter constância.",
           ].map((item, index) => (
             <S.Item
               key={index}

@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   background: ${({ theme }) => theme.colors.background};
   display: flex;
    align-items: flex-end;
@@ -14,15 +15,17 @@ export const Container = styled.section`
   background-position: center 80%;
 
     @media (max-width: 768px) {
-      min-height: 100vh;
+      min-height: 500px;
+      height: 100%; 
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
        background-size: cover;
       justify-content: center;
     }
-    
+
     @media (max-width: 440px) {
-      min-height: 40vh;
+     min-height: 292px;
+      height: 100%; 
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
        background-size: contain;
@@ -30,7 +33,17 @@ export const Container = styled.section`
     }
 
     @media (max-width: 375px) {
-      min-height: 40vh;
+      min-height: 258px;
+      height: 100%; 
+      background: url('/principal-joao-mobile.png') no-repeat;
+      align-items: flex-end;
+       background-size: contain;
+      justify-content: center;
+    }
+
+    @media (max-width: 320px) {
+      min-height: 220px;
+      height: 100%; 
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
        background-size: contain;
@@ -39,6 +52,27 @@ export const Container = styled.section`
 
 
 `;
+
+// export const Container = styled.section`
+//   position: relative;
+//   height: 100dvh;
+//   width: 100%;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   padding: 40px 20px;
+//   overflow: hidden;
+
+//   background: url('/principal-joao-web.png') no-repeat center 80%;
+//   background-size: cover;
+
+//   @media (max-width: 768px) {
+//     background: url('/principal-joao-mobile.png') no-repeat center top;
+//     min-height: 268px;
+//     height: 100%;
+//     background-size: contain;
+//   }
+// `;
 
 export const Overlay = styled.div`
   position: absolute;

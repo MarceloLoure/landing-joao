@@ -9,6 +9,7 @@ export const Container = styled.section`
   );
   display: flex;
   justify-content: center;
+    width: 100%;
 `;
 
 export const Content = styled.div`

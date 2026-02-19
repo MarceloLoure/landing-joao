@@ -28,6 +28,10 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   h1, h2 {
     font-family: "Future Tense", sans-serif;
     letter-spacing: 1px;

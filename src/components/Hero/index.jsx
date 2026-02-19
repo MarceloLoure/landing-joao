@@ -20,24 +20,16 @@ export default function Hero() {
 
     <S.ContentBottom>
       <S.Subtitle>
-        Emagreça até <span>5kg em 30 dias</span> e crie constância
-        mesmo que já tenha tentado antes.
+        Emagreça até <span>5kg em 30 dias</span> saia da procrastinação e crie constância no treino, mesmo que você já tenha tentado várias vezes e desistido.
       </S.Subtitle>
 
       <S.Description>
-        🎯 Treino estruturado, nutrição acompanhada e método
-        de fortalecimento mental.
+        🎯 Treino estruturado, nutrição estratégica, mentalidade direcionada.
       </S.Description>
 
       <S.Button onClick={goToCheckout}>
         👉 GARANTIR MINHA VAGA AGORA
       </S.Button>
-
-      <S.Badges>
-        <span>✔ Treino estruturado</span>
-        <span>✔ Nutrição com especialista</span>
-        <span>✔ Método de constância</span>
-      </S.Badges>
     </S.ContentBottom>
 
     </>
