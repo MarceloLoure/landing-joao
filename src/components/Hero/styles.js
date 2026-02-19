@@ -20,8 +20,8 @@ export const Container = styled.section`
        background-size: cover;
       justify-content: center;
     }
-
-    @media (max-width: 425px) {
+    
+    @media (max-width: 440px) {
       min-height: 40vh;
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
