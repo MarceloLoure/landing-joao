@@ -22,18 +22,18 @@ export const Container = styled.section`
     }
 
     @media (max-width: 425px) {
-      min-height: 55vh;
+      min-height: 40vh;
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
-       background-size: cover;
+       background-size: contain;
       justify-content: center;
     }
 
     @media (max-width: 375px) {
-      min-height: 45vh;
+      min-height: 40vh;
       background: url('/principal-joao-mobile.png') no-repeat;
       align-items: flex-end;
-       background-size: cover;
+       background-size: contain;
       justify-content: center;
     }
 
