@@ -10,12 +10,14 @@ import Footer from "../components/Footer";
 
 import FinalCTA from "../components/FinalCTA";
 import OfferSoft from "../components/OfferSoft";
+import { Benefits } from "../components/Benefits";
 
 function  Home() {
   return (
     <>
       <Hero />
       <Problem />
+      <Benefits />
       <Method />
       <OfferSoft />
       <Results />

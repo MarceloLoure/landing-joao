@@ -29,20 +29,15 @@ export default function Authority() {
           </h2>
 
           <p>
-            Especialista em transformação corporal focada em hipertrofia e
-            emagrecimento estratégico. Meu trabalho não é apenas montar treinos,
-            mas estruturar um método que gera evolução real e consistente.
+            Especialista em transformação corporal e mental, com foco em emagrecimento. Meu trabalho não é apenas montar treinos, mas ajudar você a perder gordura, desenvolver constância e construir resultados que permanecem, através de um método claro.
           </p>
 
           <p>
-            Já ajudei dezenas de alunos a saírem da estagnação e conquistarem
-            resultados que nunca haviam alcançado sozinhos.
+            Ao longo da minha trajetória, já ajudei centenas de alunos a saírem da estagnação, recuperarem a confiança e conquistarem um estilo de vida mais saudável — mesmo após diversas tentativas sem sucesso.
           </p>
 
           <S.Highlight>
-            Aqui você não recebe um treino genérico.
-            <br />
-            Você recebe estratégia, acompanhamento e direção.
+            Aqui, você não recebe um treino genérico. Recebe estratégia, acompanhamento e direção para emagrecer com segurança, clareza e evolução real.
           </S.Highlight>
         </S.Text>
       </S.Content>

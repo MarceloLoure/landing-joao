@@ -5,30 +5,41 @@ export default function Hero() {
   const goToCheckout = useCheckout();
 
   return (
+    <>
     <S.Container>
-      <S.Content>
-        <S.Title>DESSA VEZ VAI</S.Title>
+      <S.Overlay />
 
-        <S.Subtitle>
-          Perca até 5kg em 30 dias
+      <S.ContentTop>
+        <S.Title>
+          <span>DESSA</span>
           <br />
-          e construa constância no treino de uma vez por todas
-        </S.Subtitle>
-
-        <S.Description>
-          Mesmo que você já tenha começado várias vezes e desistido.
-        </S.Description>
-
-        <S.Button onClick={goToCheckout}>
-          QUERO COMEÇAR AGORA
-        </S.Button>
-
-        <S.Badges>
-          <span>✔ Treino estruturado</span>
-          <span>✔ Nutrição com especialista</span>
-          <span>✔ Método de constância</span>
-        </S.Badges>
-      </S.Content>
+          <span>VEZ VAI</span>
+        </S.Title>
+      </S.ContentTop>
     </S.Container>
+
+    <S.ContentBottom>
+      <S.Subtitle>
+        Emagreça até <span>5kg em 30 dias</span> e crie constância
+        mesmo que já tenha tentado antes.
+      </S.Subtitle>
+
+      <S.Description>
+        🎯 Treino estruturado, nutrição acompanhada e método
+        de fortalecimento mental.
+      </S.Description>
+
+      <S.Button onClick={goToCheckout}>
+        👉 GARANTIR MINHA VAGA AGORA
+      </S.Button>
+
+      <S.Badges>
+        <span>✔ Treino estruturado</span>
+        <span>✔ Nutrição com especialista</span>
+        <span>✔ Método de constância</span>
+      </S.Badges>
+    </S.ContentBottom>
+
+    </>
   );
 }

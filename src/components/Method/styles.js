@@ -14,7 +14,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 40px;
 
   span {

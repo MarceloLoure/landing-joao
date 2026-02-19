@@ -4,17 +4,40 @@ export const Container = styled.section`
   position: relative;
   min-height: 100vh;
   background: ${({ theme }) => theme.colors.background};
-  /* background-image: url('/principal-joao.png'); */
   display: flex;
-  align-items: center;
+   align-items: flex-end;
   justify-content: center;
   padding: 40px 20px;
   overflow: hidden;
-  background: url('/principal-joao.png') center/cover no-repeat;
+  background: url('/principal-joao-web.png') no-repeat;
+  background-size: cover;
+  background-position: center 80%;
 
     @media (max-width: 768px) {
-    background: url('/principal-joao.png') center/cover no-repeat;
+      min-height: 100vh;
+      background: url('/principal-joao-mobile.png') no-repeat;
+      align-items: flex-end;
+       background-size: cover;
+      justify-content: center;
     }
+
+    @media (max-width: 425px) {
+      min-height: 55vh;
+      background: url('/principal-joao-mobile.png') no-repeat;
+      align-items: flex-end;
+       background-size: cover;
+      justify-content: center;
+    }
+
+    @media (max-width: 375px) {
+      min-height: 45vh;
+      background: url('/principal-joao-mobile.png') no-repeat;
+      align-items: flex-end;
+       background-size: cover;
+      justify-content: center;
+    }
+
+
 `;
 
 export const Overlay = styled.div`
@@ -25,6 +48,21 @@ export const Overlay = styled.div`
     rgba(242, 31, 12, 0.15),
     transparent 70%
   );
+
+  /* @media (max-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0),
+      rgba(0,0,0,0.6)
+    );
+  } */
+`;
+
+export const ContentTop = styled.div`
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  
 `;
 
 export const Content = styled.div`
@@ -34,6 +72,13 @@ export const Content = styled.div`
   z-index: 2;
 `;
 
+export const ContentBottom = styled.section`
+  padding: 60px 20px;
+  text-align: center;
+  background: #111; // fundo sólido para limpar visual
+`;
+
+
 export const Badge = styled.div`
   display: inline-block;
   background: ${({ theme }) => theme.colors.primary};
@@ -42,20 +87,31 @@ export const Badge = styled.div`
   font-weight: bold;
   border-radius: 4px;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 1.2;
-  margin-bottom: 20px;
-  color: white;
+  color: ${({ theme }) => theme.colors.secondary};
+  -webkit-text-stroke: 10px #ffd700;
+  paint-order: stroke fill;
+  text-shadow: 0 8px 20px rgba(0,0,0,0.4);
 
+  letter-spacing: 2px;
+  display: none;
   span {
     color: ${({ theme }) => theme.colors.accent};
   }
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 1.3;
+    
   }
 `;
 
@@ -93,6 +149,15 @@ export const Subtitle = styled.h2`
 
   span {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media (max-width: 768px) {
+      font-size: 1rem;
+
+      span {
+        font-size: 1rem;
+        line-height: 1;
+      }
   }
 `;
 

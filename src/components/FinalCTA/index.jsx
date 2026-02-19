@@ -15,8 +15,7 @@ export default function FinalCTA() {
         viewport={{ once: true }}
       >
         <S.Title>
-          Chegou a hora de decidir:
-          <span> continuar igual</span> ou começar sua transformação.
+          ⏳ São Apenas 30 Dias
         </S.Title>
 
         <S.Subtitle>

@@ -45,6 +45,7 @@ export const Button = styled.a`
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  height: 50px;
 
   &:hover {
     transform: scale(1.05);
@@ -53,5 +54,12 @@ export const Button = styled.a`
   a {
     color: ${({ theme }) => theme.colors.primary};
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    height: 50px;
+    width: auto;
   }
 `;

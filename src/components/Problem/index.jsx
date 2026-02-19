@@ -6,22 +6,20 @@ export default function Problem() {
     <S.Container>
       <S.Content>
         <S.Title>
-          Por que você começa… <span>e nunca continua?</span>
+          🚨 Para quem é esse programa?
         </S.Title>
 
         <S.Subtitle>
-          O problema nunca foi falta de informação.
-          <br />
-          Foi falta de constância.
+          O Dessa Vez Vai é para homens e mulheres que:
         </S.Subtitle>
 
         <S.List>
           {[
-            "Já começou academia várias vezes e desistiu",
-            "Sabe o que precisa fazer, mas não consegue manter constância",
-            "Está acima do peso e incomodado com o próprio corpo",
-            "Se compara com outras pessoas",
-            "Tem vergonha de tirar a camiseta na praia",
+            "Já começaram academia várias vezes e desistiram",
+            "Sabem o que precisam fazer, mas não conseguem manter constância",
+            "Estão acima do peso e incomodados com o próprio corpo",
+            "Se comparam com outras pessoas",
+            "Têm vergonha de tirar a camiseta na praia",
             "Evita fotos porque não gosta do que vê",
             "Desconta ansiedade na comida",
             "Vive dizendo “segunda eu começo”"
@@ -40,10 +38,7 @@ export default function Problem() {
         </S.List>
 
         <S.Highlight>
-          Se você se identificou com pelo menos 3 pontos,
-          o problema não é falta de força de vontade.
-          <br />
-          <strong>É falta de direção.</strong>
+          💥 Se você está cansado de começar e parar, esse programa foi feito pra você.
         </S.Highlight>
       </S.Content>
     </S.Container>
